@@ -1,0 +1,40 @@
+.bookList {
+  margin: 0 5%;
+}
+
+.stack {
+  margin: 20px;
+}
+
+.stack.stack--horizontal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+@media only screen and (max-width: 575px) {
+  .stack.stack--horizontal {
+    justify-content: center;
+  }
+
+  .book {
+    flex: 90% 1;
+    max-width: 90%;
+  }
+
+  .book_inside {
+    margin: 10px;
+  }
+
+  .book__title {
+    padding: 5px 0;
+    font-size: 16px;
+  }
+
+  .book_author,
+  .book__genre {
+    font-size: 14px;
+    padding: 15px;
+  }
+}
